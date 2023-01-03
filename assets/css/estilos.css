@@ -5,13 +5,21 @@
 * Descrição: O maior objectivo desta Aplicação é disponibilizar minhas informações Profissionais
 */
 
-/* Importing Font - Montserrat */
+/* Importando Fonte - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* @font-face {
     font-family: 'montserrat', sans-serif;
     src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
 } */
+:root{
+    --clr-primario: #40dfef;
+    --clr-secondario: #01bbf0;
+    --clr-terceario: #effffd;
+    --clr-escuro: #16161d;
+    --clr-escuro-clariado: #d8d8d8;
+    --clr-branco: #fff;
+}
 
 * {
     margin: 0;
@@ -25,27 +33,58 @@ body {
     width: 100%;
     height: 100%;
     font-size: 62.5%; /* Vai me permitir utilizar o REM equivalente a 10px */
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
 }
 
-header,
-main{
-    padding: 0 10%;
+.seccao{
+    width: 100%;
+    height: auto;
+    padding: 6.8rem 10%;
+    font-size: 1.4rem;
 }
 
+/*==================================
+*        SECÇÃO CABEÇALHO
+====================================*/
 header {
+    width: 100%;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(81, 147, 255);
+    background-color: var(--clr-primario);
+    padding: 0 10%;
 }
 
 .logo{
     padding: 0.4rem 0;
 }
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--clr-escuro);
+    transition: all 0.3s;
+}
+.logo a:hover{
+    color: var(--clr-branco);
+}
+.logo a:hover img{
+    box-shadow: 1px 1px 5px 1px var(--clr-escuro);
+}
 .logo img{
-    width: 4.8rem;
+    width: 4rem;
     height: auto;
     border-radius: 50%;
+    transition: all 0.3s;
+}
+.logo span{
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
 .menu ul {
@@ -60,11 +99,11 @@ header {
 }
 
 .menu li:hover{
-    background-color: rgb(127, 191, 255);
+    background-color: var(--clr-secondario);
 }
 
 .menu li:hover a{
-    color: rgb(0, 0, 0);
+    color: var(--clr-branco);
 }
 
 .menu li:last-of-type:hover{
@@ -73,7 +112,7 @@ header {
 
 .menu li a {
     font-size: 1.4rem;
-    color: rgb(255, 255, 255);
+    color: var(--clr-escuro);
     text-decoration: none;
     margin-right: 1.1rem;
     margin-left: 1.1rem;
@@ -82,4 +121,59 @@ header {
 
 .menu li a svg {
     width: 1.6rem;
+}
+
+/*==================================
+*           SECÇÃO HERO
+====================================*/
+.hero {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    line-height: 1.6;
+}
+.perfil-descricao {
+    padding: 6.8rem 0;
+}
+.perfil-descricao h1{
+    font-size: 2.8rem;
+}
+
+.perfil-descricao h2{
+    font-size: 4.2rem;
+}
+.perfil-descricao h3 {
+    font-size: 2.2rem;
+    color: var(--clr-primario);
+    margin-top: -14px;
+}
+.perfil-descricao ul {
+    padding-left: 2%;
+    list-style: inside;
+    font-size: 1.6rem;
+    color: var(--clr-primario);
+}
+
+.perfil-foto img{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.perfil-foto img:hover{
+    box-shadow: 1px 1px 15px 6px var(--clr-escuro);
+}
+
+/*==================================
+*         SECÇÃO APRESENTAÇÃO
+====================================*/
+.apresentacao {
+    background-color: var(--clr-terceario);
+    line-height: 1.4;
+}
+.apresentacao h1{
+    font-size: 3.2rem;
+}
+.apresentacao p {
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
 }
