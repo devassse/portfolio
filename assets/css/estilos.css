@@ -42,8 +42,12 @@ body{
 .seccao{
     width: 100%;
     height: auto;
-    padding: 6.8rem 10%;
+    padding: 8.8rem 10%;
     font-size: 1.4rem;
+}
+.seccao h1{
+    font-size: 3.2rem;
+    margin-bottom: 2.2rem;
 }
 
 /*==================================
@@ -132,7 +136,7 @@ header {
     line-height: 1.6;
 }
 .perfil-descricao {
-    padding: 6.8rem 0;
+    padding: 4.8rem 0;
 }
 .perfil-descricao h1{
     font-size: 2.8rem;
@@ -171,6 +175,7 @@ header {
     border: none;
     color: var(--clr-branco);
     text-decoration: none;
+    margin-right: 1.4rem;
     border-radius: 2.2rem;
     transition: all 0.3s;
 }
@@ -198,10 +203,33 @@ header {
     background-color: var(--clr-terceario);
     line-height: 1.4;
 }
-.apresentacao h1{
-    font-size: 3.2rem;
-}
+
 .apresentacao p {
     line-height: 1.8;
     margin-bottom: 0.8rem;
+    font-size: 1.6rem;
 }
+
+/*==================================
+*        SECÇÃO EXPERIÊNCIA
+====================================*/
+.experiencia{
+    
+
+
+    background-color: #01bbf0;
+}
+
+/*==================================
+*       SECÇÃO CERTIFICAÇÕES
+====================================*/
+.certificacoes {
+
+    background-color: #40dfef;
+}
+
+
+
+/*==================================
+*       SECÇÃO CONTACTOS
+====================================*/
