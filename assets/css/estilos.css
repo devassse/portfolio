@@ -144,7 +144,7 @@ header {
 .perfil-descricao h3 {
     font-size: 2.2rem;
     color: var(--clr-primario);
-    margin-top: -14px;
+    margin-top: -1.6rem;
 }
 .perfil-descricao ul {
     padding-left: 2%;
@@ -161,6 +161,34 @@ header {
 }
 .perfil-foto img:hover{
     box-shadow: 1px 1px 15px 6px var(--clr-escuro);
+}
+.opcoes {
+    margin-top: 3.2rem;
+}
+.opcoes a {
+    padding: 0.8em 2.2em;
+    background-color: var(--clr-escuro);
+    border: none;
+    color: var(--clr-branco);
+    text-decoration: none;
+    border-radius: 2.2rem;
+    transition: all 0.3s;
+}
+.opcoes a:hover,
+.opcoes a:focus,
+.opcoes a:active{
+    background-color: var(--clr-escuro-clariado);
+    color: var(--clr-escuro);
+}
+.opcoes .contactar {
+    background-color: var(--clr-primario);
+    color: var(--clr-escuro);
+}
+.opcoes .contactar:hover,
+.opcoes .contactar:focus,
+.opcoes .contactar:active{
+    background-color: var(--clr-secondario);
+    color: var(--clr-branco);
 }
 
 /*==================================
