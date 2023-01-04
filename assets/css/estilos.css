@@ -238,19 +238,30 @@ header {
     font-size: 1.6rem;
 }
 .experiencia__lado-esquerdo{
-    border-right: 1px solid var(--clr-secondario);
+    border-right: 2px solid var(--clr-secondario);
     text-align: right;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.2rem;
+    padding: 6.8rem 0.8rem;
 }
 .experiencia__lado-esquerdo article{
     width: 70%;
     padding: 2.2em;
     background-color: var(--clr-primario);
     border-radius: 15px;
+    position: relative;
+}
+.experiencia__lado-esquerdo article::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr-escuro);
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    border-radius: 50%;
 }
 .experiencia__lado-direito{
     text-align: left;
@@ -258,17 +269,26 @@ header {
     justify-content: left;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.2rem;
-    margin-top: 2.2rem;
-    margin-left: px;
+    padding: 0.8rem;
+    margin-top: 8.8rem;
 }
 .experiencia__lado-direito article{
     width: 70%;
     padding: 2.2em;
     background-color: var(--clr-secondario);
     border-radius: 15px;
+    position: relative;
 }
-
+.experiencia__lado-direito article::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr-escuro);
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    border-radius: 50%;
+}
 /*==================================
 *       SECÇÃO CERTIFICAÇÕES
 ====================================*/
