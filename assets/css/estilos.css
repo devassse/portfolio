@@ -46,7 +46,7 @@ body{
     font-size: 1.4rem;
 }
 .seccao h1{
-    font-size: 3.2rem;
+    font-size: 2rem;
     margin-bottom: 2.2rem;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 .menu li a {
-    font-size: 1.4rem;
+    font-size: 1.66rem;
     color: var(--clr-escuro);
     text-decoration: none;
     margin-right: 1.1rem;
@@ -204,20 +204,69 @@ header {
     line-height: 1.4;
 }
 
+.apresentacao h1{
+    color: var(--clr-secondario);
+}
+
 .apresentacao p {
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 0.8rem;
     font-size: 1.6rem;
+}
+
+.apresentacao__lados {
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    align-items: center;
 }
 
 /*==================================
 *        SECÇÃO EXPERIÊNCIA
 ====================================*/
 .experiencia{
-    
-
-
-    background-color: #01bbf0;
+    width: 100%;
+}
+.experiencia h1{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+.experiencia__lados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.experiencia__lados h2{
+    font-size: 1.6rem;
+}
+.experiencia__lado-esquerdo{
+    border-right: 1px solid var(--clr-secondario);
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.2rem;
+}
+.experiencia__lado-esquerdo article{
+    width: 70%;
+    padding: 2.2em;
+    background-color: var(--clr-primario);
+    border-radius: 15px;
+}
+.experiencia__lado-direito{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.2rem;
+    margin-top: 2.2rem;
+    margin-left: px;
+}
+.experiencia__lado-direito article{
+    width: 70%;
+    padding: 2.2em;
+    background-color: var(--clr-secondario);
+    border-radius: 15px;
 }
 
 /*==================================
