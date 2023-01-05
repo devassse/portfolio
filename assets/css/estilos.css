@@ -236,6 +236,17 @@ header {
 }
 .experiencia__lados h2{
     font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+.experiencia__lados p{
+    line-height: 2.2rem;
+}
+.experiencia__lados h2 span{
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.experiencia__lados p span{
+    text-decoration: underline;
 }
 .experiencia__lado-esquerdo{
     border-right: 2px solid var(--clr-secondario);
@@ -246,10 +257,15 @@ header {
     gap: 2rem;
     padding: 6.8rem 0.8rem;
 }
-.experiencia__lado-esquerdo article{
-    width: 70%;
-    padding: 2.2em;
+.artigo__fundo-primario{
+    background-color: var(--clr-secondario);
+}
+.artigo__fundo-secundario{
     background-color: var(--clr-primario);
+}
+.experiencia__lado-esquerdo article{
+    width: 80%;
+    padding: 2.2em;
     border-radius: 15px;
     position: relative;
 }
@@ -273,9 +289,8 @@ header {
     margin-top: 8.8rem;
 }
 .experiencia__lado-direito article{
-    width: 70%;
+    width: 80%;
     padding: 2.2em;
-    background-color: var(--clr-secondario);
     border-radius: 15px;
     position: relative;
 }
@@ -283,11 +298,11 @@ header {
     content: '';
     width: 10px;
     height: 10px;
-    background-color: var(--clr-escuro);
     position: absolute;
     top: 50%;
     left: -9px;
     border-radius: 50%;
+    background-color: var(--clr-escuro);
 }
 /*==================================
 *       SECÇÃO CERTIFICAÇÕES
