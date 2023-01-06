@@ -244,6 +244,11 @@ header {
     border-radius: 15px;
     padding: 2.2rem;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.habilidade:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(94, 209, 244, 0.3);
 }
 .habilidade img{
     width: 100%;
