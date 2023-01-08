@@ -99,7 +99,7 @@ header {
 }
 
 .menu li {
-    padding: 2.2rem 0.4rem;
+    padding: 0 0.4rem;
     cursor: pointer;
 }
 
@@ -116,6 +116,10 @@ header {
 }
 
 .menu li a {
+    height: 6.2rem;
+    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 1.66rem;
     color: var(--clr-escuro);
     text-decoration: none;
@@ -141,15 +145,17 @@ header {
 }
 .perfil-descricao h1{
     font-size: 2.8rem;
+    text-align: left;
+    margin-bottom: 0.8rem;
 }
 
 .perfil-descricao h2{
     font-size: 4.2rem;
+    line-height: 1;
 }
 .perfil-descricao h3 {
     font-size: 2.2rem;
     color: var(--clr-primario);
-    margin-top: -1.6rem;
 }
 .perfil-descricao ul {
     padding-left: 2%;
@@ -378,6 +384,7 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     border-radius: 15px;
     cursor: pointer;
@@ -387,7 +394,75 @@ header {
     box-shadow: inset 0 0 0 2000px rgba(42, 47, 48, 0.8); */
     background-color: var(--clr-escuro);
 }
+.certificado a{
+    font-style: italic;
+    color: var(--clr-escuro-clariado);
+    text-decoration: none;
+}
+.certificado a:hover {
+    text-decoration: underline;
+}
+/*==================================
+*       SECÇÃO CONTACTOS
+====================================*/
+.contactos {
+    padding: 4.4rem 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.8rem;
+    line-height: 2.2rem;
+}
+.contactos h1{
+    font-size: 1.66rem;
+    text-align: left;
+}
 
 /*==================================
 *       SECÇÃO CONTACTOS
 ====================================*/
+.direitos-autorais {
+    background-color: var(--clr-secondario);
+    padding: 1.2em;
+    color: var(--clr-branco);
+    font-size: 1.1rem;
+    text-align: center;
+}
+.direitos-autorais a{
+    color: var(--clr-branco);
+    text-decoration: none;
+}
+.direitos-autorais a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 936px) {
+    html,
+    body {
+        font-size: 50%;
+    }
+    .menu li {
+        padding: 0 0.2rem;
+    }
+    .menu li a {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 723px) {
+    /* Trigger Small Screen Version */
+    .logo{
+        padding: 0.8rem 0;
+    }
+    .menu {
+        display: none;
+    }
+    .apresentacao__lados {
+        grid-template-columns: 1fr;
+    }
+    .apresentacao__icon-lado {
+        display: none;
+    }
+}
