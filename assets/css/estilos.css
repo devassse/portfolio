@@ -101,10 +101,31 @@ header {
 .menu li {
     padding: 0 0.4rem;
     cursor: pointer;
+    position: relative;
 }
 
 .menu li:hover{
     background-color: var(--clr-secondario);
+}
+
+.menu li:hover .sub-menu {
+    display: block !important;
+}
+.menu li:hover .aberto{
+    display: block;
+}
+.menu li:hover .fechado{
+    display: none;
+}
+.fechado,
+.aberto {
+    margin-left: 2px;
+    margin-top: 4px;
+}
+
+.aberto{
+    display: none;
+    transition: all 0.3s;
 }
 
 .menu li:hover a{
@@ -130,6 +151,21 @@ header {
 
 .menu li a svg {
     width: 1.6rem;
+}
+
+/*========= SUBMENU ===============*/
+.sub-menu {
+    display: none !important;
+    position: absolute;
+}
+.sub-menu li {
+    background-color: var(--clr-primario) !important;
+    color: var(--clr-escuro) !important;
+    transition: all 0.3s;
+}
+.sub-menu li:hover {
+    background-color: var(--clr-secondario) !important;
+    color: var(--clr-escuro) !important;
 }
 
 /*==================================
@@ -354,17 +390,26 @@ header {
     background-color: var(--clr-escuro);
 }
 /*==================================
-*       SECÇÃO CERTIFICAÇÕES
+*       SECÇÃO PROJEECTOS
 ====================================*/
-.certificacoes {
+.projectos {
     background-image: url(../imgs/coding-wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 2000px rgba(94, 209, 244, 0.3);
 }
+.projectos h1{
+    color: var(--clr-branco);
+}
+/*==================================
+*       SECÇÃO CERTIFICAÇÕES
+====================================*/
+.certificacoes {
+    box-shadow: inset 0 0 0 2000px rgba(94, 209, 244, 0.1);
+}
 
 .certificacoes h1{
-    color: var(--clr-branco);
+    color: var(--clr-escuro);
     margin-bottom: 6.4rem;
 }
 
