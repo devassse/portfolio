@@ -342,6 +342,15 @@ header {
     gap: 2rem;
     padding: 6.8rem 0.8rem;
 }
+.artigo__fundo-primario,
+.artigo__fundo-secundario {
+    transition: all 0.3s;
+}
+.artigo__fundo-primario:hover,
+.artigo__fundo-secundario:hover {
+    transform: scale(1.01);
+    box-shadow:  0 0 6px 2px rgba(42, 47, 48, 0.4);
+}
 .artigo__fundo-primario{
     background-color: var(--clr-secondario);
 }
@@ -401,6 +410,12 @@ header {
 .projectos h1{
     color: var(--clr-branco);
 }
+.projectos-feitos {
+    
+    
+    padding: 2.2rem;
+    border: 1px dotted red;
+}
 /*==================================
 *       SECÇÃO CERTIFICAÇÕES
 ====================================*/
@@ -438,6 +453,11 @@ header {
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 2000px rgba(42, 47, 48, 0.8); */
     background-color: var(--clr-escuro);
+    transition: all 0.3s;
+}
+.certificado:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 6px 2px rgba(42, 47, 48, 0.8);
 }
 .certificado a{
     font-style: italic;
