@@ -13,8 +13,8 @@
     src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
 } */
 :root{
-    --clr-primario: #40dfef;
-    --clr-secondario: #01bbf0;
+    --clr-primario: #03c0f7;
+    --clr-secondario: #40dfef;
     --clr-terceario: #effffd;
     --clr-escuro: #16161d;
     --clr-escuro-clariado: #d8d8d8;
@@ -60,8 +60,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-primario);
     padding: 0 10%;
+    background-color: var(--clr-primario);
+    background: url('../imgs/header.jpg');
 }
 
 .logo{
@@ -114,18 +115,13 @@ header {
 .menu li:hover .aberto{
     display: block;
 }
-.menu li:hover .fechado{
-    display: none;
+.menu li:hover .cetinha{
+    transform: rotate(180deg);
+    margin-top: -0.6rem;
 }
-.fechado,
-.aberto {
+.cetinha {
     margin-left: 2px;
     margin-top: 4px;
-}
-
-.aberto{
-    display: none;
-    transition: all 0.3s;
 }
 
 .menu li:hover a{
@@ -302,6 +298,10 @@ header {
 .habilidade p span{
     font-weight: 700;
 }
+.habilidade p .desc{
+    font-style: italic;
+    font-weight: lighter;
+}
 
 
 /*==================================
@@ -364,14 +364,18 @@ header {
     position: relative;
 }
 .experiencia__lado-esquerdo article::after{
-    content: '';
-    width: 10px;
-    height: 10px;
-    background-color: var(--clr-escuro);
+    content: 'x';
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-terceario);
     position: absolute;
     top: 50%;
-    right: -9px;
+    right: -16px;
     border-radius: 50%;
+    border: 1px solid var(--clr-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .experiencia__lado-direito{
     text-align: left;
@@ -411,19 +415,47 @@ header {
     color: var(--clr-branco);
 }
 .projectos-feitos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    row-gap: 1.2rem;
+    column-gap: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
     
-    
-    padding: 2.2rem;
-    border: 1px dotted red;
+    padding: 4.2rem 0 6.8rem 0;
+}
+.projectos-feitos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projecto {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    grid-column: span 2;
+    height: 283px;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.projecto:hover{
+    filter: brightness(0.3);
+}
+.projecto:first-of-type{
+    grid-column: 2 / span 2;
+}
+.projecto:nth-of-type(7){
+    grid-column: 2 / span 2;
 }
 /*==================================
 *       SECÇÃO CERTIFICAÇÕES
 ====================================*/
-.certificacoes {
+.formacoes {
     box-shadow: inset 0 0 0 2000px rgba(94, 209, 244, 0.1);
 }
 
-.certificacoes h1{
+.formacoes h1{
     color: var(--clr-escuro);
     margin-bottom: 6.4rem;
 }
