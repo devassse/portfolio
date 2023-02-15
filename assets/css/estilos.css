@@ -364,10 +364,10 @@ header {
     position: relative;
 }
 .experiencia__lado-esquerdo article::after{
-    content: 'x';
+    content: 'L';
     width: 15px;
     height: 15px;
-    background-color: var(--clr-terceario);
+    background-color: var(--clr-primario);
     position: absolute;
     top: 50%;
     right: -16px;
@@ -376,6 +376,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 8px;
+    transform: scaleX(-1) rotate(-45deg);
 }
 .experiencia__lado-direito{
     text-align: left;
@@ -393,14 +395,20 @@ header {
     position: relative;
 }
 .experiencia__lado-direito article::before{
-    content: '';
-    width: 10px;
-    height: 10px;
+    content: 'L';
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-secondario);
     position: absolute;
     top: 50%;
-    left: -9px;
+    left: -16px;
     border-radius: 50%;
-    background-color: var(--clr-escuro);
+    border: 1px solid var(--clr-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    transform: scaleX(-1) rotate(-45deg);
 }
 /*==================================
 *       SECÇÃO PROJEECTOS
