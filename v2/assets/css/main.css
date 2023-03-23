@@ -45,7 +45,6 @@ section {
 }
 .header::before {
   content: "";
-  /* background-image: url('https://placekitten.com/1200/800'); */
   background-image: url(../imgs/header.jpg);
   background-size: cover;
   position: absolute;
@@ -53,7 +52,7 @@ section {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 .header h1,
 .header a {
@@ -126,9 +125,12 @@ section {
   color: var(--txt-white);
   border-radius: 2rem;
   margin-top: 2rem;
+  transition: all 0.3s
 }
 .btn:hover {
-  box-shadow: 0 0 1px var(--bg-color-secondary);
+  box-shadow: 0 0 1rem var(--txt-primary);
+  color: var(--bg-color-primary);
+  transform: scale(1.1);
 }
 
 .hero img {
@@ -143,7 +145,8 @@ section {
     0% 70%,
     0% 30%
   );
-  box-shadow: 1rem 0 3px var(--txt-primary);
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--txt-primary);
 }
 
 .social-media a {
@@ -158,10 +161,12 @@ section {
   font-size: 2rem;
   color: var(--txt-primary);
   margin: 3rem 1.6rem 3rem 0;
+  transition: all 0.3s
 }
 
 .social-media a:hover {
   background-color: var(--txt-primary);
   color: var(--bg-color-secondary);
   box-shadow: 0 0 1rem var(--txt-primary);
+  transform: rotate(360deg) scale(1.1);
 }
