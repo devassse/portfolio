@@ -1,153 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 :root {
-    --bg-color-primary: #1f242d;
-    --bg-color-secondary: #323946;
-    --txt-white: #fff;
-    --txt-primary:#0ef;
+  --bg-color-primary: #1f242d;
+  --bg-color-secondary: #323946;
+  --txt-white: #fff;
+  --txt-primary: #0ef;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
-body{
-    background-color: var(--bg-color-primary);
-    color: var(--txt-white);
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--txt-white);
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
 .header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 2rem 9%;
-    background-color: var(--bg-color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 9%;
+  background-color: var(--bg-color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
-.header::before {    
-    content: "";
-    /* background-image: url('https://placekitten.com/1200/800'); */
-    background-image: url(../imgs/header.jpg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
+.header::before {
+  content: "";
+  /* background-image: url('https://placekitten.com/1200/800'); */
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
-.header h1, 
+.header h1,
 .header a {
-    position: relative;
-    color: var(--txt-white);  
-    line-height: 0.9;
-    text-align: center;
-  }
+  position: relative;
+  color: var(--txt-white);
+  line-height: 0.9;
+  text-align: center;
+}
 
 .logo {
-    font-size: 2.6rem;
-    color: var(--txt-white);
-    font-weight: 900;
-    cursor: pointer;
+  font-size: 2.6rem;
+  color: var(--txt-white);
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .navbar a {
-    color: var(--txt-white);
-    font-size: 1.6rem;
-    margin-left: 3rem;
-    transition: all 0.3s;
+  color: var(--txt-white);
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  transition: all 0.3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--txt-primary);
+  color: var(--txt-primary);
 }
 
 #menu-icon {
-    font-size: 3.6rem;
-    color: var(--txt-white);
-    display: none;
+  font-size: 3.6rem;
+  color: var(--txt-white);
+  display: none;
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
 .hero-content h1 {
-    font-size: 3.2rem;
-    line-height: 0.8;
+  font-size: 3.2rem;
+  line-height: 0.8;
 }
 
-.hero-content h3{
-    font-size: 5.6rem;
-    font-weight: 700;
+.hero-content h3 {
+  font-size: 5.6rem;
+  font-weight: 700;
 }
 
 .hero-content h4 {
-    font-size: 3.2rem;
-    line-height: 0.8;
-    margin-bottom: 2rem;
+  font-size: 3.2rem;
+  line-height: 0.8;
+  margin-bottom: 2rem;
 }
 
 .hero-content h4 span {
-    color: var(--txt-primary);
+  color: var(--txt-primary);
 }
 
 .hero-content p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .btn {
-    padding: 1.2rem 6rem;
-    background-color: var(--txt-primary);
-    font-size: 1.6rem;
-    color: var(--txt-white);
-    border-radius: 2rem;
+  padding: 1.2rem 6rem;
+  background-color: var(--txt-primary);
+  font-size: 1.6rem;
+  color: var(--txt-white);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.btn:hover {
+  box-shadow: 0 0 1px var(--bg-color-secondary);
 }
 
 .hero img {
-    width: 30vw;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  width: 30vw;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  box-shadow: 1rem 0 3px var(--txt-primary);
 }
 
 .social-media a {
-    width: 4rem;
-    height: 4rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: .2rem solid var(--txt-primary);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--txt-primary);
-    margin: 3rem 1.6rem 3rem 0;
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 0.2rem solid var(--txt-primary);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--txt-primary);
+  margin: 3rem 1.6rem 3rem 0;
 }
 
 .social-media a:hover {
-    background-color: var(--txt-primary);
-    color: var(--bg-color-secondary);
-    box-shadow: 0 0 1rem var(--txt-primary);
+  background-color: var(--txt-primary);
+  color: var(--bg-color-secondary);
+  box-shadow: 0 0 1rem var(--txt-primary);
 }
