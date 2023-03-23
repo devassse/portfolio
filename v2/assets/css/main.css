@@ -17,6 +17,9 @@
   --txt-primary: #0ef;
 }
 
+/*==================================
+*         GENERAL STYLES
+====================================*/
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -28,9 +31,12 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 4rem 9% 2rem;
 }
 
+/*==================================
+*        HEADER STYLES
+====================================*/
 .header {
   width: 100%;
   position: fixed;
@@ -69,6 +75,9 @@ section {
   cursor: pointer;
 }
 
+/*==================================
+*        NAVBAR STYLES
+====================================*/
 .navbar a {
   color: var(--txt-white);
   font-size: 1.6rem;
@@ -87,11 +96,15 @@ section {
   display: none;
 }
 
+/*==================================
+*        HERO STYLES
+====================================*/
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6rem;
+
 }
 
 .hero-content h1 {
@@ -116,23 +129,29 @@ section {
 
 .hero-content p {
   font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 
 .btn {
+  display: inline-block;
   padding: 1.2rem 6rem;
   background-color: var(--txt-primary);
   font-size: 1.6rem;
-  color: var(--txt-white);
+  color: var(--bg-color-primary);
   border-radius: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.4rem;
   transition: all 0.3s
 }
+
 .btn:hover {
   box-shadow: 0 0 1rem var(--txt-primary);
-  color: var(--bg-color-primary);
-  transform: scale(1.1);
+  color: var(--bg-color-secondary);
+  transform: scale(1.02);
 }
 
+/*==================================
+*      HERO IMAGE STYLES
+====================================*/
 .hero img {
   width: 30vw;
   clip-path: polygon(
@@ -149,6 +168,9 @@ section {
   box-shadow: 0 0 1rem var(--txt-primary);
 }
 
+/*==================================
+*     SOCIAL MEDIA STYLES
+====================================*/
 .social-media a {
   width: 4rem;
   height: 4rem;
@@ -169,4 +191,71 @@ section {
   color: var(--bg-color-secondary);
   box-shadow: 0 0 1rem var(--txt-primary);
   transform: rotate(360deg) scale(1.1);
+}
+
+/*==================================
+*        ABOUT STYLES
+====================================*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color-secondary);
+}
+
+.about-content h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-content .btn {
+  margin-top: 2rem;
+}
+
+/*==================================
+*        SKILLS STYLES
+====================================*/
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills h2{
+  font-size: 3.6rem;
+  margin-bottom: 4rem;
+}
+.skills-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.skills-content .skill {
+  flex: 1 1 30rem;
+  background: var(--bg-color-secondary);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+
+}
+.skill i {
+  font-size: 6rem;
+}
+.skill h3 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.skill p {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
