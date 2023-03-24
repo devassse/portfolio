@@ -1,3 +1,4 @@
+/* Coded with L0v3 by D3v4ss3 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -33,7 +34,13 @@ section {
   min-height: 100vh;
   padding: 4rem 9% 2rem;
 }
-
+.heading {
+  font-size: 3.6rem;
+  margin-bottom: 6rem;
+}
+.heading span {
+  color: var(--txt-primary);
+}
 /*==================================
 *        HEADER STYLES
 ====================================*/
@@ -86,8 +93,10 @@ section {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a:active,
+.navbar a:focus {
   color: var(--txt-primary);
+  font-weight: 400;
 }
 
 #menu-icon {
@@ -104,7 +113,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 6rem;
-
 }
 
 .hero-content h1 {
@@ -140,7 +148,7 @@ section {
   color: var(--bg-color-primary);
   border-radius: 2rem;
   margin-top: 0.4rem;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -183,7 +191,7 @@ section {
   font-size: 2rem;
   color: var(--txt-primary);
   margin: 3rem 1.6rem 3rem 0;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 
 .social-media a:hover {
@@ -201,11 +209,6 @@ section {
   justify-content: center;
   align-items: center;
   background: var(--bg-color-secondary);
-}
-
-.about-content h2 {
-  font-size: 3.6rem;
-  margin-bottom: 2rem;
 }
 
 .about-content p {
@@ -227,10 +230,7 @@ section {
   align-items: center;
   flex-direction: column;
 }
-.skills h2{
-  font-size: 3.6rem;
-  margin-bottom: 4rem;
-}
+
 .skills-content {
   display: flex;
   justify-content: center;
@@ -245,10 +245,11 @@ section {
   padding: 4rem 2rem;
   border-radius: 2rem;
   text-align: center;
-
+  transition: all 0.3s;
 }
 .skill i {
   font-size: 6rem;
+  color: var(--txt-primary);
 }
 .skill h3 {
   margin: 2rem 0;
@@ -258,4 +259,231 @@ section {
   margin: 2rem 0;
   font-size: 1.4rem;
   line-height: 2.2rem;
+}
+
+.skill:hover {
+  border: 1px solid var(--txt-primary);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/*==================================
+*       EXPERIENCE STYLES
+====================================*/
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../imgs/bg-exp.png);
+}
+.sub-heading {
+  width: 60%;
+  margin-top: -5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.experience-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin-top: 4rem;
+}
+.experience-tab h5 {
+  padding: 1.2rem;
+  background: var(--txt-primary);
+  color: var(--bg-color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.experience-tab-left h5 {
+  margin-right: 21px;
+}
+.experience-tab-right h5 {
+  margin-left: 21px;
+}
+.experience-tab-left h5::after {
+  content: "";
+  top: 0;
+  left: 100%;
+  position: absolute;
+  border-bottom: 21px solid transparent;
+  border-left: 21px solid var(--txt-primary);
+  border-top: 21px solid transparent;
+}
+.experience-tab-right h5::before {
+  content: "";
+  top: 0;
+  right: 100%;
+  position: absolute;
+  border-bottom: 21px solid transparent;
+  border-right: 21px solid var(--txt-primary);
+  border-top: 21px solid transparent;
+}
+.experience-tab h6 {
+  font-size: 1.2rem;
+}
+.experience-tab p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+.experience-tab {
+  margin-bottom: 4rem;
+}
+
+.experience-left {
+  text-align: right;
+}
+.experience-right {
+  text-align: left;
+  margin-top: 6rem;
+}
+
+/*==================================
+*       PORTFOLIO STYLES
+====================================*/
+.portfolio {
+  background: var(--bg-color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color-primary);
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+.project:hover .project-layer {
+  transform: translateY(0);
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+.project-image img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.project-image:hover img {
+  transform: scale(1.2);
+}
+.project-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--txt-primary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: all 0.3s;
+}
+
+.project-layer h4 {
+  font-size: 2.8rem;
+}
+
+.project-layer p {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.project-layer a {
+  width: 5rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  background: var(--bg-color-secondary);
+  border-radius: 50%;
+}
+
+.project-layer a:hover {
+  background: var(--bg-color-primary);
+}
+
+.project-layer a i {
+  font-size: 2rem;
+  color: var(--txt-primary);
+}
+
+.project-intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  transition: all 0.3s;
+  padding: 0 4rem;
+}
+.project-intro h4 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+.project-intro p {
+  font-size: 1.4rem;
+}
+
+.project:hover .project-intro {
+  transform: translateY(-100%);
+}
+.projects-rights {
+  grid-column: 1/-1;
+}
+
+/*==================================
+*       FOOTER STYLES
+====================================*/
+.footer {
+  padding: 4rem 9% 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.footer article {
+  padding: 4rem 0;
+}
+
+.footer article h5 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.footer article p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+.footer article a {
+  color: var(--txt-white);
+  text-decoration: underline;
+}
+
+.copyrights {
+  background: var(--bg-color-secondary);
+  padding: 1rem 9%;
+  display: flex;
+  justify-content: space-between;
+}
+.copyrights a {
+  color: var(--txt-white);
+}
+.copyrights a:hover {
+  text-decoration: underline;
 }
