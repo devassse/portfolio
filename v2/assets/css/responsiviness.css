@@ -1,4 +1,4 @@
-@media only screen and (max-width:1180px){
+@media only screen and (max-width:1330px){
  /* PORTFOLIO STYLES */
  .portfolio-content {
     grid-template-columns: repeat(2, 1fr);
