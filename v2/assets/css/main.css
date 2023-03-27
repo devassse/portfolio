@@ -475,7 +475,12 @@ section {
   color: var(--txt-white);
   text-decoration: underline;
 }
-
+.footer .shorbio a{
+  color: var(--txt-primary);
+}
+.footer .shorbio a:hover{
+  color: var(--txt-white);
+}
 .copyrights {
   background: var(--bg-color-secondary);
   padding: 1rem 9%;
