@@ -93,11 +93,11 @@ section {
 }
 
 .navbar a:hover,
-.navbar a:active,
-.navbar a:focus {
+.navbar a.active {
   color: var(--txt-primary);
   font-weight: 400;
 }
+
 
 #menu-icon {
   font-size: 3.6rem;
