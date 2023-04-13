@@ -38,3 +38,8 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
+
+
+//Mixe It Up
+
+let mixer = mixitup('.container');

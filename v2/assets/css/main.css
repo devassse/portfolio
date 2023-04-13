@@ -14,8 +14,8 @@
 :root {
   --bg-color-primary: #1f242d;
   --bg-color-secondary: #323946;
-  --txt-white: #fff;
-  --txt-primary: #0ef;
+  --txt-white: #ffffff;
+  --txt-primary: #3cd0f7; 
 }
 
 /*==================================
@@ -298,12 +298,12 @@ section {
   margin-bottom: 1.2rem;
   position: relative;
 }
-.experience-tab-left h5 {
+/* .experience-tab-left h5 {
   margin-right: 21px;
 }
 .experience-tab-right h5 {
   margin-left: 21px;
-}
+} */
 .experience-tab-left h5::after {
   content: "";
   top: 0;
@@ -322,8 +322,47 @@ section {
   border-right: 21px solid var(--txt-primary);
   border-top: 21px solid transparent;
 }
+.experience-tab-left ul {
+  margin-right: 20px;
+  font-size: 1.4rem;
+  list-style: none;
+}
+.experience-tab-left ul li{
+  font-weight: bold;
+}
+.experience-tab-left ul li span{
+  display: block;
+  margin-top: 12px;
+}
+.experience-tab-left ul li p{
+  font-weight: normal;
+  font-style: italic;
+  margin-top: -12px;
+}
+.experience-tab-right ul {
+  margin-right: 20px;
+  font-size: 1.4rem;
+  list-style: none;
+}
+.experience-tab-right ul li{
+  font-weight: bold;
+}
+.experience-tab-right ul li span{
+  display: block;
+  margin-top: 12px;
+}
+.experience-tab-right ul li p{
+  font-weight: normal;
+  font-style: italic;
+  margin-top: -12px;
+}
+
+
+
+
+
 .experience-tab h6 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .experience-tab p {
   font-size: 1.4rem;
@@ -350,6 +389,14 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.portfolio-page {
+  background: var(--bg-color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 9%;
 }
 
 .project {
@@ -442,12 +489,36 @@ section {
 .project-intro p {
   font-size: 1.4rem;
 }
+.project-intro p span {
+  display: block;
+  font-size: 1rem;
+}
 
 .project:hover .project-intro {
   transform: translateY(-100%);
 }
-.projects-rights {
+.projects-rights,
+.projects-filter {
   grid-column: 1/-1;
+}
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.projects-filter button {
+  min-width: 100px;
+  padding: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.projects-filter button:hover,
+.projects-filter button:focus,
+.projects-filter button:active {
+  background-color: var(--bg-color-secondary);
+  box-shadow: 0 0 8px var(--txt-primary);
+  color: var(--txt-primary);
 }
 
 /*==================================
