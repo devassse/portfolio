@@ -209,7 +209,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: var(--bg-color-secondary);
+}
+
+.about-content {
+  margin-bottom: 6rem;
 }
 
 .about-content p {
@@ -220,6 +225,54 @@ section {
 
 .about-content .btn {
   margin-top: 2rem;
+}
+
+.certifications-content {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 6.8rem;
+}
+
+.certification {
+  flex: 1 1 33rem;
+  background: var(--bg-color-primary);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.certification:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px var(--txt-primary);
+}
+.certification h3 {
+  margin: 1.8rem 0 0.6rem 0;
+  font-size: 2rem;
+}
+
+.certification p,
+.certification a{
+  font-size: 1.2rem;
+}
+
+.certification a{
+  display: inline-block;
+  margin: 1.2rem 0;
+  color: var(--txt-white);
+  text-decoration: underline;
+  color: var(--txt-primary);
+}
+.certification a:hover{
+  color: var(--txt-white);
 }
 
 /*==================================
@@ -263,9 +316,9 @@ section {
 }
 
 .skill:hover {
-  border: 1px solid var(--txt-primary);
   transform: scale(1.02);
   cursor: pointer;
+  box-shadow: 0 0 10px var(--txt-primary);
 }
 
 /*==================================
