@@ -3,10 +3,10 @@ import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import "./App.css";
 
-const translationEn = {welcome: "Welcome", title: "I am a Programmer!!", description: "With more than 8 years of experience in the professional market"};
-const translationPt = {welcome: "Seja Bem Vindo!", title: "Sou Programador!!", description: "Com mais de 8 anos de experiência no mercado profissional"};
-const translationJpRm = {welcome: "Irasshaimase", title: "Watashi wa Programma desu!!", description: "Purofesshonaru ichiba de 8-nen no keiken o motsu"};
-const translationJp = {welcome: "いらっしゃいませ", title: "私はですプログラム!!", description: "プロフェッショナル市場で8年の経験を持つ"};
+const translationEn = {welcome: "Welcome", title: "I am a Programmer!!", description: "With more than 8 years of experience in the professional market", langEn: "English", langPt: "Portuguese", langJpRm: "Japanese(romaji)", langJp: "Japanese"};
+const translationPt = {welcome: "Seja Bem Vindo!", title: "Sou Programador!!", description: "Com mais de 8 anos de experiência no mercado profissional", langEn: "Inglês", langPt: "Português", langJpRm: "Japonês(romaji)", langJp: "Japonês"};
+const translationJpRm = {welcome: "Irasshaimase", title: "Watashi wa Programma desu!!", description: "Purofesshonaru ichiba de 8-nen no keiken o motsu", langEn: "Eigo", langPt: "Porutogaru-go", langJpRm: "Nihongo(Rōma ji)", langJp: "Nihongo"};
+const translationJp = {welcome: "いらっしゃいませ", title: "私はですプログラム!!", description: "プロフェッショナル市場で8年の経験を持つ", langEn: "英語", langPt: "ポルトガル語", langJpRm: "日本語(ローマ字)", langJp: "日本語"};
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -41,10 +41,10 @@ function App() {
 
         <div className="lang-switcher">
         <select name="language" onChange={onChange}>
-          <option value="en">English</option>
-          <option value="pt">Portuguese</option>
-          <option value="jprm">Japanese(Romage)</option>
-          <option value="jp">Japanese</option>
+          <option value="en">{t('langEn')}</option>
+          <option value="pt">{t('langPt')}</option>
+          <option value="jprm">{t('langJpRm')}</option>
+          <option value="jp">{t('langJp')}</option>
         </select>
         </div>
       </Suspense>
