@@ -1,24 +1,7 @@
 import { Suspense } from "react";
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import i18n from "../src/i18n"
 import "./App.css";
-
-const translationEn = {welcome: "Welcome", title: "I am a Programmer!!", description: "With more than 8 years of experience in the professional market", langEn: "English", langPt: "Portuguese", langJpRm: "Japanese(romaji)", langJp: "Japanese"};
-const translationPt = {welcome: "Seja Bem Vindo!", title: "Sou Programador!!", description: "Com mais de 8 anos de experiência no mercado profissional", langEn: "Inglês", langPt: "Português", langJpRm: "Japonês(romaji)", langJp: "Japonês"};
-const translationJpRm = {welcome: "Irasshaimase", title: "Watashi wa Programma desu!!", description: "Purofesshonaru ichiba de 8-nen no keiken o motsu", langEn: "Eigo", langPt: "Porutogaru-go", langJpRm: "Nihongo(Rōma ji)", langJp: "Nihongo"};
-const translationJp = {welcome: "いらっしゃいませ", title: "私はですプログラム!!", description: "プロフェッショナル市場で8年の経験を持つ", langEn: "英語", langPt: "ポルトガル語", langJpRm: "日本語(ローマ字)", langJp: "日本語"};
-
-i18n.use(initReactI18next).init({
-  resources: {
-    en: { translation: translationEn },
-    pt: { translation: translationPt },
-    jprm: { translation: translationJpRm },
-    jp: { translation: translationJp },
-  },
-  lng: "en",
-  fallbacklng: "en",
-  interpolation: { escapeValue: false },
-});
 
 function App() {
   const { t } = useTranslation()
