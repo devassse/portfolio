@@ -19,7 +19,7 @@
   --bg-color-primary: #1f242d;
   --bg-color-secondary: #323946;
   --txt-white: #ffffff;
-  --txt-primary: #3cd0f7; 
+  --txt-primary: #3cd0f7;
 }
 
 /*==================================
@@ -89,6 +89,10 @@ section {
 /*==================================
 *        NAVBAR STYLES
 ====================================*/
+.navbar li {
+  display: inline;
+}
+
 .navbar a {
   color: var(--txt-white);
   font-size: 1.6rem;
@@ -102,12 +106,54 @@ section {
   font-weight: 400;
 }
 
+.navbar ul ul li a:focus,
+.navbar ul ul li a:active {
+    color: var(--txt-primary);
+}
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active,
+.navbar a:focus:hover,
+.navbar a:active:hover {
+    color: var(--txt-primary);
+}
+
+.navbar ul li:focus > .navbar-submenu,
+.navbar ul li:active > .navbar-submenu {
+  display: inherit;
+}
+
+.navbar a:focus + .navbar-submenu,
+.navbar a:active + .navbar-submenu {
+  display: inherit;
+}
 
 #menu-icon {
   font-size: 3.6rem;
   color: var(--txt-white);
   cursor: pointer;
   display: none;
+}
+
+/*========== NAVBAR SUBMENU ======== */
+.navbar-submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: var(--bg-color-secondary);
+  right: 0.6rem;
+  margin-top: 2.6rem;
+}
+.navbar-submenu li {
+  display: list-item;
+  position: relative;
+  padding: 1rem 2.2rem 1rem 0;
+  border-bottom: 1px solid var(--txt-white);
+}
+.navbar-submenu li:last-child {
+  border-bottom: 1px solid transparent;
 }
 
 /*==================================
@@ -264,18 +310,18 @@ section {
 }
 
 .certification p,
-.certification a{
+.certification a {
   font-size: 1.2rem;
 }
 
-.certification a{
+.certification a {
   display: inline-block;
   margin: 1.2rem 0;
   color: var(--txt-white);
   text-decoration: underline;
   color: var(--txt-primary);
 }
-.certification a:hover{
+.certification a:hover {
   color: var(--txt-white);
 }
 
@@ -384,14 +430,14 @@ section {
   font-size: 1.4rem;
   list-style: none;
 }
-.experience-tab-left ul li{
+.experience-tab-left ul li {
   font-weight: bold;
 }
-.experience-tab-left ul li span{
+.experience-tab-left ul li span {
   display: block;
   margin-top: 12px;
 }
-.experience-tab-left ul li p{
+.experience-tab-left ul li p {
   font-weight: normal;
   font-style: italic;
   margin-top: -12px;
@@ -401,19 +447,18 @@ section {
   font-size: 1.4rem;
   list-style: none;
 }
-.experience-tab-right ul li{
+.experience-tab-right ul li {
   font-weight: bold;
 }
-.experience-tab-right ul li span{
+.experience-tab-right ul li span {
   display: block;
   margin-top: 12px;
 }
-.experience-tab-right ul li p{
+.experience-tab-right ul li p {
   font-weight: normal;
   font-style: italic;
   margin-top: -12px;
 }
-
 
 .experience-tab h6 {
   font-size: 1.6rem;
@@ -566,7 +611,7 @@ section {
   padding: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .projects-filter button:hover,
 .projects-filter button:focus,
@@ -601,10 +646,10 @@ section {
   color: var(--txt-white);
   text-decoration: underline;
 }
-.footer .shorbio a{
+.footer .shorbio a {
   color: var(--txt-primary);
 }
-.footer .shorbio a:hover{
+.footer .shorbio a:hover {
   color: var(--txt-white);
 }
 .copyrights {
