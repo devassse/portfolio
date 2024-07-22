@@ -4,6 +4,7 @@ import profilePic from "../../../public/imgs/profile.jpg"
 
 const Hero = () => {
   const { t } = useTranslation();
+  let cvUrl = t('download_cv_url'); //Dynamic CV File depending on Selected Language
 
   return (
     <>
@@ -29,7 +30,7 @@ const Hero = () => {
           ></a>
         </div>
         <a
-          href="assets/files/CV-JoaoDevsonMucavel-EN-7.0.pdf"
+          href={cvUrl}
           target="_blank"
           className="btn"
           >{t("download_cv")}
