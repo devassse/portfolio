@@ -211,7 +211,12 @@ section {
 /*==================================
 *      HERO IMAGE STYLES
 ====================================*/
-.hero img {
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
   width: 30vw;
   clip-path: polygon(
     30% 0%,
@@ -225,6 +230,43 @@ section {
   );
   cursor: pointer;
   box-shadow: 0 0 1rem var(--txt-primary);
+  position: relative;
+}
+
+.profile .intro-video{
+  width: 10vw;
+  position: absolute;
+  text-align: center;
+}
+.profile .intro-video img{
+  width: 20%;
+  transition: 0.3s ease-in-out;
+}
+.profile .intro-video img:hover{
+  width: 50%;
+}
+
+.profile .intro-video img:focus .intro-video-player{
+  display: block;
+}
+
+
+/*====== INTRO VIDEO PLAYER ======*/
+.intro-video-player{
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top: 100px;
+  left: 5%;
+  box-shadow: 0 0 1rem var(--txt-primary);
+  display: none;
+}
+
+.intro-video-player video {
+  width: 100%;
+  height: 100%;
 }
 
 /*==================================

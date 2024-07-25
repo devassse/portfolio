@@ -13,7 +13,7 @@ export default {
   langJpRm: "日本語(ローマ字)",
   langJp: "日本語",
   download_cv: "履歴書をダウンロード",
-  download_cv_url: "../../../public/files/CV-joaoDevsonMucavel-JP-7.1.pdf"
+  download_cv_url: "../../../files/CV-joaoDevsonMucavel-JP-7.1.pdf"
 };
 
 
