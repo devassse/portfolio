@@ -13,5 +13,5 @@ export default {
   langJpRm: "Japonês(romaji)",
   langJp: "Japonês",
   download_cv: "Baixar CV",
-  download_cv_url: "../../../public/files/CV-joaoDevsonMucavel-PT-7.1.pdf"
+  download_cv_url: "../../../files/CV-joaoDevsonMucavel-PT-7.1.pdf"
 };
