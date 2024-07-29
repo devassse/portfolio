@@ -1,6 +1,5 @@
 .lang-switcher{
   position: absolute;
-  right: 0px;
   top: 43.5px;
 }
 
@@ -21,7 +20,7 @@
   border: 1px dotted red;
   justify-content: right;
 }
-.submenu_lang {
+/* .submenu_lang {
   width: 2rem;
   border-color: red;
-}
+} */

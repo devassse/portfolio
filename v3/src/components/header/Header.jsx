@@ -1,13 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../src/i18n";
-import IconLanguageOutline from "../svgs/languageIcon"
+import IconLanguageOutline from "../svgs/languageIcon";
 
 const header = () => {
   const { t } = useTranslation();
 
-  const onChange = (event) => {
-    i18n.changeLanguage(event.target.value);
+  const switchLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
   return (
     <>
@@ -24,33 +24,37 @@ const header = () => {
         </a>
 
         <nav className="navbar">
-          <a href="#about" className="active">
-          {t("presentation")}
-          </a>
-          <a href="#skills">{t("skills")}</a>
-          <a href="#experience">{t("experience")}</a>
-          <a href="#portfolio">{t("portfolio")}</a>
-          <a href="#contacts">{t("contacts")}</a>
-          <a href="#">
-          <IconLanguageOutline/>
-          <div className="submenu_lang">
-            <ul>
-              <li>Language</li>
-              <li>Language</li>
+          <ul>
+            <li>
+              <a href="#about">
+                {t("presentation")}
+              </a>
+            </li>
+            <li>
+              <a href="#skills">{t("skills")}</a>
+            </li>
+            <li>
+              <a href="#experience">{t("experience")}</a>
+            </li>
+            <li>
+              <a href="#portfolio">{t("portfolio")}</a>
+            </li>
+            <li>
+              <a href="#contacts">{t("contacts")}</a>
+            </li>
+            <li>
+              <a href="#">
+                <IconLanguageOutline />
+              </a>
+              <ul className="navbar-submenu">
+                <li onClick={() => switchLanguage('en')}><a href="#">{t("langEn")}</a></li>
+                <li onClick={() => switchLanguage('pt')}><a href="#">{t("langPt")}</a></li>
+                <li onClick={() => switchLanguage('jprm')}><a href="#">{t("langJpRm")}</a></li>
+                <li onClick={() => switchLanguage('jp')}><a href="#">{t("langJp")}</a></li>
             </ul>
-          </div>
-          </a>
+            </li>
+          </ul>
         </nav>
-
-        
-        <div className="lang-switcher">
-            <select name="language" onChange={onChange}>
-              <option value="en">{t("langEn")}</option>
-              <option value="pt">{t("langPt")}</option>
-              <option value="jprm">{t("langJpRm")}</option>
-              <option value="jp">{t("langJp")}</option>
-            </select>
-          </div>
       </header>
       {/* HEADER SECTION */}
     </>

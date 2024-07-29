@@ -12,5 +12,6 @@ export default {
   langPt: "Porutogaru-go",
   langJpRm: "Nihongo(Rōma ji)",
   langJp: "Nihongo",
-  download_cv: "Rirekisho o daunrōdo"
+  download_cv: "Rirekisho o daunrōdo",
+  download_cv_url: "../../../files/CV-joaoDevsonMucavel-JPRM-7.1.pdf"
 };
