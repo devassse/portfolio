@@ -33,6 +33,12 @@ const header = () => {
           <a href="#contacts">{t("contacts")}</a>
           <a href="#">
           <IconLanguageOutline/>
+          <div className="submenu_lang">
+            <ul>
+              <li>Language</li>
+              <li>Language</li>
+            </ul>
+          </div>
           </a>
         </nav>
 
