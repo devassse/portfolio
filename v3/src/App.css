@@ -15,3 +15,12 @@
 .description{
   font-size: 1.6rem;
 }
+.submenu_lang{
+  /* display: none; */
+  border: 1px dotted red;
+  justify-content: right;
+}
+/* .submenu_lang {
+  width: 2rem;
+  border-color: red;
+} */
