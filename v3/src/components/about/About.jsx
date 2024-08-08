@@ -24,14 +24,14 @@ const about = () => {
             <div className="certification">
               <h3>Javascript</h3>
               <p>Udemy | Acedemind</p>
-              <a target="_blank" href="assets/files/Certificate-Javascript.pdf">
+              <a target="_blank" href="../public/files/Certificate-Javascript.pdf">
                 {t("download")}
               </a>
             </div>
             <div className="certification">
               <h3>Java</h3>
               <p>Udemy | SDE Arts</p>
-              <a target="_blank" href="assets/files/Certificate-Java.pdf">
+              <a target="_blank" href="../public/files/Certificate-Java.pdf">
               {t("download")}
               </a>
             </div>
@@ -40,7 +40,7 @@ const about = () => {
               <p>Udemy | Vitalii Shumylo</p>
               <a
                 target="_blank"
-                href="assets/files/certificate-introDevOps.pdf"
+                href="../public/files/certificate-introDevOps.pdf"
               >
                 {t("download")}
               </a>
@@ -48,7 +48,7 @@ const about = () => {
             <div className="certification">
               <h3>Certificado Profissional</h3>
               <p>IICAEG | SNE</p>
-              <a target="_blank" href="assets/files/certidao-profissional.pdf">
+              <a target="_blank" href="../public/files/certidao-profissional.pdf">
               {t("download")}
               </a>
             </div>
