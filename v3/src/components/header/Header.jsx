@@ -14,7 +14,7 @@ const header = () => {
       {/* HEADER SECTION */}
       <header className="header">
         <h1>
-          <a href="#" className="logo">
+          <a href="#home" className="logo">
             Devasse.
           </a>
         </h1>

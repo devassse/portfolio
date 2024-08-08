@@ -13,5 +13,12 @@ export default {
   langJpRm: "Nihongo(Rōma ji)",
   langJp: "Nihongo",
   download_cv: "Rirekisho o daunrōdo",
-  download_cv_url: "../../../files/CV-joaoDevsonMucavel-JPRM-7.1.pdf"
+  download_cv_url: "../../../files/CV-joaoDevsonMucavel-JPRM-7.1.pdf",
+  download: "Daunrōdo",
+  
+  //About Section
+  about: "Watashi",
+  mim: "ni tsuite",
+  description_name: "Watashinonamaeha Joan debuson mukaberu desu, 1991-nen 6 tsuki 9-nichi umare, 2006-nen ni kiso kyōiku o, 2008-nen ni yī bān zhōng děng jiào yù O shūryō shimashita.",
+  description_info: "Watashi wa 2014-nen ni `Instituto indasutoriaru ando konpyūtingu Armando Emílio Guebuza' de konpyūta shisutemu puroguramingu o sotsugyō shi,`Universidade São Tomás de Moçambique' de shisutemu kanri jōhō oyobi nettowāku no gakui o shutoku shimashita (1-nen-me nomi). Watashi wa `mozanbīku kōtō kaiyō kagaku gakkō' de puroguramingu konpyūta oyobi denki tsūshin shisutemu no gakui o shutoku suru tsumoridesu.",
 };
