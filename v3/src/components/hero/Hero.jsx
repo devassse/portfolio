@@ -36,6 +36,9 @@ const Hero = () => {
             <a href="https://github.com/devassse" target="_blank">
               <i className="bx bxl-github"></i>
             </a>
+            <a href="https://www.youtube.com/@keomatech" target="_blank">
+              <i className="bx bxl-youtube"></i>
+            </a>
             <a href="https://www.facebook.com/Devasse" target="_blank">
               <i className="bx bxl-facebook"></i>
             </a>

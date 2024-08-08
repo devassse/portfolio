@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #525a61;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.up,
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em
+}
+
+.card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out
+}
+.card1:hover {
+    scale: 1.1;
+    background: #331c2d;
+    cursor: pointer;
+}
+.bxl-github {
+    font-size: 2.6em;
+    margin-top: 0.4em;
+    margin-left: 0.4em;
+    color: #331c2d;
+}
+.card1:hover .bxl-github {
+    color: #fff;
+}
+.card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out
+}
+.card2:hover{
+    scale: 1.1;
+    background: #184ad1;
+    cursor: pointer;
+}
+.bxl-linkedin {
+    font-size: 2.6em;
+    margin-top: 0.4em;
+    margin-right: 0.4em;
+    color: #184ad1;
+}
+.card2:hover .bxl-linkedin{
+    color: #fff;
+}
+.card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out
+}
+.card3:hover {
+    scale: 1.1;
+    background: #de3333;
+    cursor: pointer;
+}
+.bxl-youtube {
+    font-size: 2.6em;
+    margin-bottom: 0.4em;
+    margin-left: 0.4em;
+    color: #de3333;
+}
+.card3:hover .bxl-youtube{
+    color: #fff;
+}
+.card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out
+}
+.card4:hover {
+    scale: 1.1;
+    background: #e82dc6;
+    cursor: pointer;
+}
+.bxl-instagram {
+    font-size: 2.6em;
+    margin-bottom: 0.4em;
+    margin-right: 0.4em;
+    color: #e82dc6;
+}
+.card4:hover .bxl-instagram{
+    color: #fff;
+}
