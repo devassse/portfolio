@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import profilePic from "../../../public/imgs/profile.jpg";
 import playIntro from "../../../public/icons/play_intro.svg";
+import IntroVideo from "../../../public/intros/intro-main.mp4"
 
 const Hero = () => {
   const { t } = useTranslation();
   let cvUrl = t("download_cv_url"); //Dynamic CV File depending on Selected Language
+
+  const [introPopUp, setIntroPopUp] = useState(false)
+
+  const enableOpenIntroVideo = () => {
+    console.log("Opening Video");
+    setIntroPopUp(!introPopUp)
+    
+  }
 
   return (
     <>
@@ -27,6 +36,9 @@ const Hero = () => {
             <a href="https://github.com/devassse" target="_blank">
               <i className="bx bxl-github"></i>
             </a>
+            <a href="https://www.youtube.com/@keomatech" target="_blank">
+              <i className="bx bxl-youtube"></i>
+            </a>
             <a href="https://www.facebook.com/Devasse" target="_blank">
               <i className="bx bxl-facebook"></i>
             </a>
@@ -37,19 +49,24 @@ const Hero = () => {
         </div>
         <div className="profile">
           <img src={profilePic} alt="João Devson Mucavel" />
-          <div className="intro-video">
+          <div className="intro-video" onClick={enableOpenIntroVideo}>
             <img src={playIntro} alt="Play" />
           </div>
         </div>
       </section>
+      {introPopUp ?
       <div className="intro-video-player">
-        <video controls>
+        <div className="close-intro">
+          <button onClick={enableOpenIntroVideo}>X</button>
+        </div>
+        <video controls autoPlay>
           <source
-            src="https://youtube.com/shorts/-DigN-ESkWs?si=8O4H23bKN99cBfA"
+            src={IntroVideo}
           />
           Your browser does not support the video tag.
         </video>
       </div>
+          : ""}
     </>
   );
 };

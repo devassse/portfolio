@@ -13,5 +13,12 @@ export default {
   langJpRm: "Japonês(romaji)",
   langJp: "Japonês",
   download_cv: "Baixar CV",
-  download_cv_url: "../../../files/CV-joaoDevsonMucavel-PT-7.1.pdf"
+  download_cv_url: "../../../files/CV-joaoDevsonMucavel-PT-7.1.pdf",
+  download: "Baixar",
+
+  //About Section
+  about: "Sobre",
+  mim: "mim",
+  description_name: "Meu nome é João Devson Mucavel, nascido a 09 de Junho de 1991, concluí o ensino básico em 2006 e o ensino secundário geral em 2008.",
+  description_info: "Fui Graduado em Programação de Sistemas Informáticos pelo \"Instituto Industrial e de Computação Armando Emílio Guebuza\" em 2014 e tendo frequentado a Licenciatura em Administração de Sistemas de Informação e Redes na \"Universidade São Tomás de Moçambique\", (1º ano apenas), tenciono frequentar a Licenciatura em Programação de Sistemas Informáticos e de Telecomunicações na \"Escola Superior de Ciências Náuticas de Moçambique\".",
 };
