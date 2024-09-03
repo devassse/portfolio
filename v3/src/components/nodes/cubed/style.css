@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: radial-gradient(rgb(5,221,245), rgb(6, 150, 253));
+    font-family: sans-serif;
+}
+
+.container {
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(-90deg); */
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+    25%{
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+    50%{
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+    75%{
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+    100%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+.card{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    font-size: 32px;
+    position: absolute;
+    transition: all 3s;
+}
+#front{
+    transform: translateZ(125px);
+}
+#back{
+    transform: translateZ(-125px);
+}
+#right{
+    left: 125px;
+    transform: rotateY(90deg);
+}
+#left{
+    right: 125px;
+    transform: rotateY(90deg);
+}
+#top{
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+#bottom{
+    top: 125px;
+    transform: rotateX(90deg);
+}
+
+/**
+* Button and Effects
+*/
+button {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    left: 175px;
+    cursor: pointer;
+}
+button:hover ~ .box #front {
+    transform: translateZ(180px) rotateY(360deg);
+}
+button:hover ~ .box #back {
+    transform: translateZ(-180px) rotateY(360deg);
+}
+button:hover ~ .box #left {
+    right: 180px;
+}
+button:hover ~ .box #right {
+    left: 180px;
+}
+button:hover ~ .box #top {
+    bottom: 180px;
+}
+button:hover ~ .box #bottom {
+    top: 180px;
+}
