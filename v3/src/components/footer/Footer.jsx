@@ -19,7 +19,7 @@ const footer = () => {
               bases de dados relacionais e no-SQL.
             </p>
             <p>
-              Baixar <a href="assets/files/shortbio.pptx">Shorbio.ppt</a>
+              Baixar <a target="_blank" href="../../public/files/shortbio.pptx">Shorbio.ppt</a>
             </p>
           </article>
           <article className="main-contacts">
@@ -48,18 +48,18 @@ const footer = () => {
               Certificações.
             </p>
             <p>
-              <a href="assets/files/diploma.jfif">Diploma</a>
+              <a target="_blank" href="../../public/files/diploma.jfif">Diploma</a>
             </p>
             <p>
-              <a href="assets/files/certidao-profissional.pdf" target="_blank">
-                Certificado Profissional
+              <a target="_blank" href="../../public/files/certidao-profissional.pdf">
+              Certificado Profissional
               </a>
             </p>
-            <p>
+            {/* <p>
               <a href="assets/files/certidao-acadamico.pdf" target="_blank">
                 Certificado Acadêmico
               </a>
-            </p>
+            </p> */}
           </article>
           <article className="footer-social-media">
             <h5>Redes Sociais</h5>
@@ -70,12 +70,12 @@ const footer = () => {
               </a>
             </p>
             <p>
-              LinkedIn:
+              LinkedIn: 
               <a
                 href="https://www.linkedin.com/in/jo%C3%A3o-devson-mucavel-116072aa/"
                 target="_blank"
               >
-                https://in.com/joao-devson-mucavel
+                 https://in.com/joao-devson-mucavel
               </a>
             </p>
             <p>
