@@ -62,7 +62,7 @@ section {
 }
 .header::before {
   content: "";
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../src/assets/header.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
