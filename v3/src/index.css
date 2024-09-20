@@ -108,14 +108,14 @@ section {
 
 .navbar ul ul li a:focus,
 .navbar ul ul li a:active {
-    color: var(--txt-primary);
+  color: var(--txt-primary);
 }
 .navbar a:hover,
 .navbar a:focus,
 .navbar a:active,
 .navbar a:focus:hover,
 .navbar a:active:hover {
-    color: var(--txt-primary);
+  color: var(--txt-primary);
 }
 
 .navbar ul li:focus > .navbar-submenu,
@@ -211,7 +211,7 @@ section {
 /*==================================
 *      HERO IMAGE STYLES
 ====================================*/
-.profile{
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,26 +233,25 @@ section {
   position: relative;
 }
 
-.profile .intro-video{
+.profile .intro-video {
   width: 10vw;
   position: absolute;
   text-align: center;
 }
-.profile .intro-video img{
+.profile .intro-video img {
   width: 20%;
   transition: 0.3s ease-in-out;
 }
-.profile .intro-video img:hover{
+.profile .intro-video img:hover {
   width: 50%;
 }
 
-.profile .intro-video img:focus .intro-video-player{
+.profile .intro-video img:focus .intro-video-player {
   display: block;
 }
 
-
 /*====== INTRO VIDEO PLAYER ======*/
-.intro-video-player{
+.intro-video-player {
   width: 90%;
   height: 80vh;
   position: absolute;
@@ -276,7 +275,7 @@ section {
   top: 4px;
   right: 4px;
 }
-.close-intro button{
+.close-intro button {
   font-size: 16px;
   color: #ffffff;
   background-color: transparent;
@@ -536,7 +535,11 @@ section {
   text-align: left;
   margin-top: 6rem;
 }
-
+.sitation {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #3cd0f7;
+}
 /*==================================
 *       PORTFOLIO STYLES
 ====================================*/
