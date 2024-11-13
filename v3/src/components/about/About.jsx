@@ -55,7 +55,7 @@ const about = () => {
             <div className="certification">
               <h3>Satori</h3>
               <p>Programa Japonês Online</p>
-              <a target="_blank" href="#">
+              <a target="_blank" href="../public/files/certificate-satori-nihongo.pdf">
               {t("download")}
               </a>
             </div>
