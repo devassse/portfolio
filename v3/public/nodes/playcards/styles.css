@@ -1,0 +1,54 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --clr: #232428;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    padding: 10px;
+}
+.top, .bottom {
+    font-size: 1.4rem;
+    line-height: 18px;
+}
+.card span {
+    font-size: 2rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.bottom {
+    transform: rotate(180deg);
+}
+
+/* Hearts */
+.card-hearts span {
+    color: red; 
+}
+
+/* Hearts */
+.card-hearts .center span {
+    font-size: 6rem;
+    margin-top: 2rem;
+}

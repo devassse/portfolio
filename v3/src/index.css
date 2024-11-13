@@ -180,11 +180,39 @@ section {
   font-size: 3.2rem;
   line-height: 0.8;
   margin-bottom: 2rem;
+  animation: 6s swap infinite;
 }
 
 .hero-content h4 span {
   color: var(--txt-primary);
 }
+
+/* Swap Effects */
+/* .hero-content h4 span::after {
+  content: "";
+} */
+
+/* @keyframes swap {
+  0% {
+      content: "Coding!";
+  }
+
+  25% {
+      content: "Gaming!";
+  }
+
+  50% {
+      content: "Animating!";
+  }
+
+  75% {
+      content: "Sleeping!";
+  }
+  
+  100% {
+      content: "Coding!";
+  }
+} */
 
 .hero-content p {
   font-size: 1.6rem;

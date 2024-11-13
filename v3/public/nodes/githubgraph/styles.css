@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1116;
+}
+
+:root {
+    --graph-bg: #000;
+    --default-square-bg: #161b22;
+    --level3: darkblue;
+    --level5: blue;
+    --level10: lightskyblue;
+}
+
+ul {
+    color: #fff;
+}
+
+.graph {
+    display: grid;
+    grid-template-columns: repeat(52, 1fr);
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background: var(--default-square-bg);
+    background: pink;
+    margin: 3px;
+    margin-right: 0;
+    border-radius: 2px;
+}

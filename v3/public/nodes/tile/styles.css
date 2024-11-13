@@ -1,0 +1,76 @@
+:root {
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username: #b7bbc8;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: var(--bg-main);
+}
+p, h3 {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+
+.card, img {
+    border-radius: 10px;
+}
+
+.card {
+    max-width: 300px;
+    background-color: var(--bg-card);
+    margin: auto;
+    padding: 1em;
+}
+.card-thumbnail img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.card-details {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.card-details h3 {
+    font-weight: 900;
+    font-size: 1rem;
+}
+.card-details p {
+    font-size: .85rem;
+    color: var(--username);
+}
+
+.card-avatar img{
+    width: 50px;
+}
+
+.card-stats {
+    display: none;
+    margin-top: 10px;
+}
+.card-stats li {
+    background-color: var(--bg-stats);
+    padding: .25em .5em;
+    margin-right: .5em;
+    border-radius: 5px;
+    list-style: none;
+    display: inline;
+}
+.card:hover .card-stats{
+    display: inline;
+}
+
+
+

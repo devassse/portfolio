@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-gb: #fff;
+}
+
+.toggle-wrap {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #232428; */
+}
+label {
+    width: 100px;
+    height: 40px;
+    border: 1px solid var(--toggle-border);
+    border-radius: 40px;
+    padding: .25em;
+    cursor: pointer;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-input:checked ~ .toggle-switch {
+    background-color: red;
+    transform: translateX(calc(100px - 40px));
+}
+.toggle-input:checked ~ label {
+    border: 1px solid #fff !important;
+}
+.toggle-input:checked ~ .toggle-wrap{
+    background-color: #232428;
+}
+
+.toggle-switch {
+    width: 40px;
+    height: 40px;
+    background-color: var(--toggle-switch-bg);
+    border-radius: 50%;
+    transition: all .4s;
+}

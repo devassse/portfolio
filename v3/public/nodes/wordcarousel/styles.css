@@ -1,0 +1,46 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after{
+    content: "";
+    animation: 6s swap infinite;
+    background-color: var(--bg-word);
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+@keyframes swap {
+    0% {
+        content: "Coding!";
+    }
+
+    25% {
+        content: "Gaming!";
+    }
+
+    50% {
+        content: "Animating!";
+    }
+
+    75% {
+        content: "Sleeping!";
+    }
+    
+    100% {
+        content: "Coding!";
+    }
+}
