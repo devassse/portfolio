@@ -14,7 +14,7 @@ const header = () => {
       {/* HEADER SECTION */}
       <header className="header">
         <h1>
-          <a href="#home" className="logo">
+          <a href="#hero" className="logo">
             Devasse.
           </a>
         </h1>
@@ -31,10 +31,10 @@ const header = () => {
               </a>
             </li>
             <li>
-              <a href="#skills">{t("skills")}</a>
+              <a href="#experience">{t("experience")}</a>
             </li>
             <li>
-              <a href="#experience">{t("experience")}</a>
+              <a href="#skills">{t("skills")}</a>
             </li>
             <li>
               <a href="#portfolio">{t("portfolio")}</a>

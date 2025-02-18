@@ -10,7 +10,7 @@ const experience = () => {
       <section className="experience" id="experience">
       <h2 className="heading">Percurso <span>Profissional</span></h2>
       <p className="sub-heading">
-        Com 8 anos de experiência no mercado profissional, já passei por
+        Com mais de 10 anos de experiência no mercado profissional, já passei por
         diversas áreas no sector tecnológico, o que me equipou com habilidades
         que hoje me permitem fazer face ao Mundo atual e me prepararão para o
         que ainda virá.!
