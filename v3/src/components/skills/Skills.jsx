@@ -17,7 +17,7 @@ const skills = () => {
             Projectos de aplicações para Web. Desde Websites à plataformas
             Enterprise e portais para pequenos negócios e grandes empresas.
           </p>
-          <a href="pages/projects.html" className="btn">ver mais..</a>
+          <a href="#" className="btn">ver mais..</a>
         </article>
         <article className="skill">
           <i className="bx bx-mobile-vibration"></i>
@@ -27,7 +27,7 @@ const skills = () => {
             Nativas). Híbridas desenvolvidas e feitas deploy para todas
             plataformas.
           </p>
-          <a href="pages/projects.html" className="btn">ver mais..</a>
+          <a href="#" className="btn">ver mais..</a>
         </article>
         <article className="skill">
           <i className="bx bx-intersect"></i>
@@ -37,7 +37,7 @@ const skills = () => {
             Aplicações de TouchScreen. Jogos de memória e curiosidade e
             diversos.
           </p>
-          <a href="pages/projects.html" className="btn">ver mais..</a>
+          <a href="#" className="btn">ver mais..</a>
         </article>
       </div>
     </section>

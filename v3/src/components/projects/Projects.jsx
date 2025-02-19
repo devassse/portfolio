@@ -26,7 +26,7 @@ const projects = () => {
                   Projectos de websites( com mínimo de Javascript) desenvolvidos
                   por mim.
                 </p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>
@@ -48,7 +48,7 @@ const projects = () => {
                   Projectos desenvolvidos com a plataforma Node. Inclui todos
                   frameworks baseados nesta plataforma.
                 </p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>
@@ -71,7 +71,7 @@ const projects = () => {
                   projectos hybridos até aos desenvolvidos nativamente (Android
                   & iOS)
                 </p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>
@@ -93,7 +93,7 @@ const projects = () => {
                   Projectos desenvolvidos com a plataforma Java. Desde
                   aplicações Desktop até APIs.
                 </p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>
@@ -115,7 +115,7 @@ const projects = () => {
                   Soluções Tecnológicas Intercativas - aplicações de AR & VR,
                   beacons, TouchScreen.
                 </p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>
@@ -134,7 +134,7 @@ const projects = () => {
               <div className="project-layer">
                 <h4>PHP/C#/C/C++</h4>
                 <p>Variedade de Projectos fracamente implementados.</p>
-                <a href="pages/projects.html">
+                <a href="#">
                   <i className="bx bx-link-external"></i>
                 </a>
               </div>

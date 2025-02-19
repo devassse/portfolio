@@ -9,6 +9,11 @@ const header = () => {
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
+
+  const changeIcon = () => {
+    console.log("Changing Menu Icon");
+    
+  }
   return (
     <>
       {/* HEADER SECTION */}
@@ -19,7 +24,7 @@ const header = () => {
           </a>
         </h1>
 
-        <a id="menu-icon">
+        <a id="menu-icon" onClick={changeIcon}>
           <i className="bx bx-menu-alt-right"></i>
         </a>
 
