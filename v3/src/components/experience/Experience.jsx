@@ -1,8 +1,7 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const experience = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <>
@@ -17,6 +16,25 @@ const experience = () => {
       </p>
       <div className="experience-content">
         <div className="experience-left">
+          <div className="experience-tab experience-tab-left active">
+            <h5>Vodacom Moçambique</h5>
+            <h6>Systems Configurations <em>(M-Pesa Operations)</em></h6>
+            <p>
+              Processes Simplification and Automation. AI and Machine Learning
+              Solutions. Data Analytics and Reporting.
+            </p>
+            <ul>
+              <li>
+                Processes Simplification and Automation
+                <span>
+                  <p>
+                    Simplificação e Automação de Processos, com foco na
+                    eficiência operacional e redução de custos.
+                  </p>
+                </span>
+              </li>
+            </ul>
+          </div>
           <div className="experience-tab experience-tab-left">
             <h5>ITGest Moçambique</h5>
             <h6>Analista e Desenvolvedor de Software</h6>
